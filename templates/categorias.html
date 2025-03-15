@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{%block title%}
+Categorias
+{%endblock title%}
+
+
+{% block body %}
+
+
+
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="/static/images/perros1.jpg" class="card-img-top" alt="perros.png">
+          <div class="card-body">
+            <h5 class="card-title">Perros</h5>
+            <p class="card-text">Mira aqui los productos para tu amigo canino.</p>
+            <a href="/perros" class="btn btn-outline-info"><i class="fa-solid fa-arrow-right fa-lg"></i>  Gestionar </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="/static/images/red-white-cat-i-white-studio (1).jpg" class="card-img-top" alt="gatos.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Gatos</h5>
+            <p class="card-text">Mira aqui los productos para tu amigo Minino.</p>
+            <a href="/gatos" class="btn btn-outline-secondary"><i class="fa-solid fa-arrow-right fa-lg"></i> Gestionar</a>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="/static/images/cute-animals-group-white-background.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Otros</h5>
+            <p class="card-text">Productos variados para otras mascotas.</p>
+            <a href="/otros" class="btn btn-outline-success"><i class="fa-solid fa-arrow-right fa-lg"></i> Gestionar</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+{%endblock body%}
