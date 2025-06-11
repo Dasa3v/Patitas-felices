@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}Crianza de Cachorros - Patitas Felices{% endblock %}
+{% block content %}
+<section class="container py-5">
+    <h2 class="display-5 text-center">Crianza de Cachorros</h2>
+    <p class="lead text-center mb-4">Todo lo que necesitas saber para cuidar y educar a tu nuevo compañero desde sus primeras semanas.</p>
+
+    <article class="mb-5">
+        <h3>1. Preparación del Hogar</h3>
+        <p>Antes de la llegada de tu cachorro, asegúrate de tener un espacio seguro y cómodo. Coloca cama, juguetes resistentes, y delimita áreas peligrosas.</p>
+    </article>
+
+    <article class="mb-5">
+        <h3>2. Alimentación Inicial</h3>
+        <p>Hasta las 8 semanas, los cachorros deben consumir una dieta especial rica en proteínas y grasas. Consulta con tu veterinario la mejor opción de alimento balanceado.</p>
+    </article>
+
+    <article class="mb-5">
+        <h3>3. Socialización y Hábitos</h3>
+        <p>La socialización temprana es clave. Presenta al cachorro a personas, otros animales y diferentes entornos de forma gradual y siempre de manera positiva.</p>
+    </article>
+
+    <article class="mb-5">
+        <h3>4. Vacunación y Control Veterinario</h3>
+        <p>Mantén al día el calendario de vacunación. Las primeras vacunas suelen aplicarse a las 6-8 semanas. Programa visitas periódicas al veterinario.</p>
+    </article>
+
+    <article class="mb-5">
+        <h3>5. Educación Básica</h3>
+        <p>Comienza con órdenes simples: "sentado", "quieto" y socialización de la jaula. Refuerza siempre con premios y elogios.</p>
+    </article>
+
+    <div class="text-center">
+        <a href="{{ url_for('perros') }}" class="btn btn-secondary">Volver a Perros</a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Aseo - Patitas Felices{% endblock %}
+{% block content %}
+<section class="container py-5">
+    <h2 class="display-5 text-center">Aseo</h2>
+    <p class="lead text-center mb-4">Rutinas y productos para mantener a tu perro limpio y saludable.</p>
+    <article class="mb-5">
+        <h3>Baño y Champú</h3>
+        <p>Frecuencia, tipos de champú y técnicas para un baño sin estrés.</p>
+    </article>
+    <article class="mb-5">
+        <h3>Corte de Uñas y Limpieza de Oídos</h3>
+        <p>Pasos seguros para el cuidado de uñas y oídos.</p>
+    </article>
+    <div class="text-center">
+        <a href="{{ url_for('perros') }}" class="btn btn-secondary">Volver a Perros</a>
+    </div>
+</section>
+{% endblock %}

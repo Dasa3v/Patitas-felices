@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Gatos - Patitas Felices{% endblock %}
+{% block content %}
+<section class="text-center py-5">
+    <h2 class="display-5">Gatos</h2>
+    <p class="lead">Guía completa para el bienestar de tus felinos.</p>
+</section>
+<section class="container py-4">
+    <div class="row g-4">
+        {% set items = [
+            {'name':'Crianza de Mininos','link':'subpaginas/gatos/crianza.html'},
+            {'name':'Alimentación Adecuada','link':'subpaginas/gatos/alimentacion.html'},
+            {'name':'Paseos','link':'subpaginas/gatos/paseos.html'},
+            {'name':'Aseo','link':'subpaginas/gatos/aseo.html'},
+            {'name':'Medicación','link':'subpaginas/gatos/medicacion.html'},
+            {'name':'Crianza en Etapa Adulta','link':'subpaginas/gatos/etapa-adulta.html'}
+        ] %}
+        {% for item in items %}
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.name }}</h5>
+                    <a href="{{ url_for('static', filename=item.link) }}" class="btn btn-outline-primary">Ver</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
